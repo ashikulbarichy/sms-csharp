@@ -1,0 +1,17 @@
+G:\Projects\sms\StudentManagementSystem\bin\Debug\net6.0-windows\StudentManagementSystem.exe
+G:\Projects\sms\StudentManagementSystem\bin\Debug\net6.0-windows\StudentManagementSystem.deps.json
+G:\Projects\sms\StudentManagementSystem\bin\Debug\net6.0-windows\StudentManagementSystem.runtimeconfig.json
+G:\Projects\sms\StudentManagementSystem\bin\Debug\net6.0-windows\StudentManagementSystem.dll
+G:\Projects\sms\StudentManagementSystem\bin\Debug\net6.0-windows\ref\StudentManagementSystem.dll
+G:\Projects\sms\StudentManagementSystem\bin\Debug\net6.0-windows\StudentManagementSystem.pdb
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.csproj.AssemblyReference.cache
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.Form1.resources
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.csproj.GenerateResource.cache
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.AssemblyInfoInputs.cache
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.AssemblyInfo.cs
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.csproj.CoreCompileInputs.cache
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.dll
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\ref\StudentManagementSystem.dll
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.pdb
+G:\Projects\sms\StudentManagementSystem\obj\Debug\net6.0-windows\StudentManagementSystem.genruntimeconfig.cache
