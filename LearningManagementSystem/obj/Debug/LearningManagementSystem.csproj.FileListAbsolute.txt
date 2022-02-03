@@ -1,0 +1,12 @@
+G:\Projects\sms\LearningManagementSystem\bin\Debug\LearningManagementSystem.exe.config
+G:\Projects\sms\LearningManagementSystem\bin\Debug\LearningManagementSystem.exe
+G:\Projects\sms\LearningManagementSystem\bin\Debug\LearningManagementSystem.pdb
+G:\Projects\sms\LearningManagementSystem\obj\Debug\LearningManagementSystem.csproj.AssemblyReference.cache
+G:\Projects\sms\LearningManagementSystem\obj\Debug\LearningManagementSystem.csproj.SuggestedBindingRedirects.cache
+G:\Projects\sms\LearningManagementSystem\obj\Debug\LearningManagementSystem.FormStudentInfo.resources
+G:\Projects\sms\LearningManagementSystem\obj\Debug\LearningManagementSystem.Properties.Resources.resources
+G:\Projects\sms\LearningManagementSystem\obj\Debug\LearningManagementSystem.csproj.GenerateResource.cache
+G:\Projects\sms\LearningManagementSystem\obj\Debug\LearningManagementSystem.csproj.CoreCompileInputs.cache
+G:\Projects\sms\LearningManagementSystem\obj\Debug\LearningManagementSystem.exe
+G:\Projects\sms\LearningManagementSystem\obj\Debug\LearningManagementSystem.pdb
+G:\Projects\sms\LearningManagementSystem\obj\Debug\LearningManagementSystem.FormStudent.resources
