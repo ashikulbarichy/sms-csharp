@@ -13,12 +13,22 @@ namespace LearningManagementSystem
     public partial class FormStudent : Form
     {
         private readonly FormStudentInfo _parent;
+        public string id, name, reg, @class, section;
         public FormStudent(FormStudentInfo parent)
         {
             InitializeComponent();
             _parent = parent;
         }
 
+        public void UpdateInfo()
+        {
+            label1.Text = "Update Student";
+            btnSave.Text = "Update";
+            txtName.Text = name;
+            txtReg.Text = reg;
+            txtClass.Text = @class;
+            txtSection.Text = section;
+        }
         public void Clear()
         {
             txtName.Text = txtReg.Text = txtClass.Text = txtSection.Text = string.Empty;
@@ -49,7 +59,11 @@ namespace LearningManagementSystem
                 DbStudent.AddStudent(std);
                 Clear();
             }
-
+            if(btnSave.Text == "Update")
+            {
+                Student std = new Student(txtName.Text.Trim(), txtReg.Text.Trim(), txtClass.Text.Trim(), txtSection.Text.Trim());
+                DbStudent.UpdateStudent(std, id);
+            }
             _parent.Display();
         }
     }

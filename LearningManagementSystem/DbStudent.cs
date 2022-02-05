@@ -40,7 +40,7 @@ namespace LearningManagementSystem
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Added Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Added Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (MySqlException ex)
             {
@@ -49,12 +49,13 @@ namespace LearningManagementSystem
             con.Close();
         }
 
-        public static void UpdateStudent(Student std)
+        public static void UpdateStudent(Student std, string id)
         {
-            string sql = "UPDATE student_table SET Name=@StudentName, Reg = @StudentReg, Class = @StudentClass, Section = @StudentSection WHERE ID = @StudentID";
+            string sql = "UPDATE student_table SET Name = @StudentName, Reg = @StudentReg, Class = @StudentClass, Section = @StudentSection WHERE ID = @StudentID";
             MySqlConnection con = GetConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
+            cmd.Parameters.Add("@StudentID", MySqlDbType.VarChar).Value = id;
             cmd.Parameters.Add("@StudentName", MySqlDbType.VarChar).Value = std.Name;
             cmd.Parameters.Add("@StudentReg", MySqlDbType.VarChar).Value = std.Reg;
             cmd.Parameters.Add("@StudentClass", MySqlDbType.VarChar).Value = std.Class;
@@ -63,7 +64,7 @@ namespace LearningManagementSystem
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Updated Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Updated Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (MySqlException ex)
             {
@@ -82,7 +83,7 @@ namespace LearningManagementSystem
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Deleted Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Deleted Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (MySqlException ex)
             {
@@ -99,6 +100,7 @@ namespace LearningManagementSystem
             MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
             DataTable tbl = new DataTable();
             adp.Fill(tbl);
+            dgv.DataSource = tbl;
             con.Close();
         }
     }
