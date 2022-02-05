@@ -217,6 +217,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormStudentInfo";
             this.Text = "Student Information";
+            this.Shown += new System.EventHandler(this.FormStudentInfo_Shown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

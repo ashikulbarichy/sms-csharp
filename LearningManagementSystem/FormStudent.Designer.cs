@@ -31,15 +31,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtReg = new System.Windows.Forms.TextBox();
-            this.labelReg = new System.Windows.Forms.Label();
             this.txtSection = new System.Windows.Forms.TextBox();
             this.labelSection = new System.Windows.Forms.Label();
             this.txtClass = new System.Windows.Forms.TextBox();
             this.labelClass = new System.Windows.Forms.Label();
-            this.btnNew = new System.Windows.Forms.Button();
+            this.txtReg = new System.Windows.Forms.TextBox();
+            this.labelReg = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +71,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnNew);
+            this.panel2.Controls.Add(this.btnSave);
             this.panel2.Controls.Add(this.txtSection);
             this.panel2.Controls.Add(this.labelSection);
             this.panel2.Controls.Add(this.txtClass);
@@ -84,52 +84,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(337, 413);
             this.panel2.TabIndex = 1;
-            // 
-            // labelName
-            // 
-            this.labelName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(52, 41);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(60, 28);
-            this.labelName.TabIndex = 2;
-            this.labelName.Text = "Name";
-            // 
-            // txtName
-            // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(57, 72);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(212, 20);
-            this.txtName.TabIndex = 3;
-            // 
-            // txtReg
-            // 
-            this.txtReg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtReg.Location = new System.Drawing.Point(57, 141);
-            this.txtReg.Name = "txtReg";
-            this.txtReg.Size = new System.Drawing.Size(212, 20);
-            this.txtReg.TabIndex = 5;
-            // 
-            // labelReg
-            // 
-            this.labelReg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelReg.AutoSize = true;
-            this.labelReg.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelReg.Location = new System.Drawing.Point(52, 110);
-            this.labelReg.Name = "labelReg";
-            this.labelReg.Size = new System.Drawing.Size(42, 28);
-            this.labelReg.TabIndex = 4;
-            this.labelReg.Text = "Reg";
             // 
             // txtSection
             // 
@@ -177,19 +131,66 @@
             this.labelClass.TabIndex = 6;
             this.labelClass.Text = "Class";
             // 
-            // btnNew
+            // txtReg
             // 
-            this.btnNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.btnNew.FlatAppearance.BorderSize = 0;
-            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNew.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.ForeColor = System.Drawing.Color.White;
-            this.btnNew.Location = new System.Drawing.Point(57, 335);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(84, 37);
-            this.btnNew.TabIndex = 2;
-            this.btnNew.Text = "Save";
-            this.btnNew.UseVisualStyleBackColor = false;
+            this.txtReg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtReg.Location = new System.Drawing.Point(57, 141);
+            this.txtReg.Name = "txtReg";
+            this.txtReg.Size = new System.Drawing.Size(212, 20);
+            this.txtReg.TabIndex = 5;
+            // 
+            // labelReg
+            // 
+            this.labelReg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelReg.AutoSize = true;
+            this.labelReg.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReg.Location = new System.Drawing.Point(52, 110);
+            this.labelReg.Name = "labelReg";
+            this.labelReg.Size = new System.Drawing.Size(42, 28);
+            this.labelReg.TabIndex = 4;
+            this.labelReg.Text = "Reg";
+            // 
+            // txtName
+            // 
+            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtName.Location = new System.Drawing.Point(57, 72);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(212, 20);
+            this.txtName.TabIndex = 3;
+            // 
+            // labelName
+            // 
+            this.labelName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Poppins Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Location = new System.Drawing.Point(52, 41);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(60, 28);
+            this.labelName.TabIndex = 2;
+            this.labelName.Text = "Name";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(57, 334);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(84, 37);
+            this.btnSave.TabIndex = 10;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FormStudent
             // 
@@ -221,6 +222,6 @@
         private System.Windows.Forms.Label labelReg;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Button btnSave;
     }
 }
